@@ -1,0 +1,40 @@
+# to install via dpkg
+
+root@ubuntu18:~# dpkg -i telegraf_1.20.3-1_amd64.deb
+
+Selecting previously unselected package telegraf.
+(Reading database ... 74259 files and directories currently installed.)
+Preparing to unpack telegraf_1.20.3-1_amd64.deb ...
+Unpacking telegraf (1.20.3-1) ...
+Setting up telegraf (1.20.3-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/telegraf.service → /lib/systemd/system/telegraf.service.
+
+# to remove
+dpkg --remove  telegraf
+
+# to check what files are installed.
+
+root@ubuntu18:/etc/telegraf# dpkg-query -L telegraf
+/.
+/etc
+/etc/logrotate.d
+/etc/logrotate.d/telegraf
+/etc/telegraf
+/etc/telegraf/telegraf.conf.sample
+/etc/telegraf/telegraf.d
+/usr
+/usr/bin
+/usr/bin/telegraf
+/usr/lib
+/usr/lib/telegraf
+/usr/lib/telegraf/scripts
+/usr/lib/telegraf/scripts/init.sh
+/usr/lib/telegraf/scripts/telegraf.service
+/usr/share
+/usr/share/doc
+/usr/share/doc/telegraf
+/usr/share/doc/telegraf/changelog.gz
+/var
+/var/log
+/var/log/telegraf
+root@ubuntu18:/etc/telegraf#
